@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    outline: none;
+}
+
+body{
+    font-size: 100%;
+    background-color: #ffffff;
+    height: 100vh;
+}
+
+.cabecalho{
+    background-color: #2c3e50;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+padding: 18px;
+    border-bottom: 1px solid rgb(219, 217, 217);
+}
+
+.cabecalho-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo{
+    height: 30px;
+}
+
+a{
+    color: #ffffff;
+    text-decoration: none;
+    transition: 0.2s;
+    list-style: none;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.cabecalho-item{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-list-menu{
+    list-style: none;
+    display: flex;
+}
+
+.nav-list-menu li{
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+.cabecalho-item:hover{
+    opacity: 0.7;
+    color: #33ff00;
+}
+
+
+body {
+    background-color: #f8f9fa;
+    margin: 0;
+    color: #333;
+}
+
+main {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+h1, h2 {
+    color: #2c3e50;
+}
+
+li{
+    list-style: none;
+}
+
+.main-title {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.section-title {
+    font-size: 22px;
+    border-left: 4px solid #2c3e50;
+    padding-left: 8px;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+
+.steps-list, .document-list, .non-eligibility-list, list, .eligibility-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.step-item, .document-item, .non-eligibility-item, .schedule-item, .eligibility-item {
+    padding: 10px;
+    margin: 5px 0;
+    background-color: #e9ecef;
+    border-radius: 4px;
+}
+
+.step-item:nth-child(odd), .document-item:nth-child(odd),
+.non-eligibility-item:nth-child(odd), .schedule-item:nth-child(odd),
+.eligibility-item:nth-child(odd) {
+    background-color: #dfe3e6;
+}
+
+
+.description, .eligibility-description {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+
+.schedule-item strong {
+    color: #2c3e50;
+}
+
+
+@media (max-width: 600px) {
+    main {
+        padding: 10px;
+    }
+    .main-title {
+        font-size: 24px;
+    }
+    .section-title {
+        font-size: 18px;
+    }
+}

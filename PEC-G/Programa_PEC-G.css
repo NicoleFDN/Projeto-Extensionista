@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
+
+/* Resetando as margens e o padding */
+body, h1, h2, p, ul, ol, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos gerais */
+body {
+    background-color: #ffffff;
+    color: #333333;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Título principal */
+.titulo, .main-title {
+    font-size: 3em;
+    text-align: center;
+    margin: 30px 0;
+    color: #333333;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+}
+
+/* Descrição */
+.descricao {
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 40px;
+}
+
+/* Seções */
+main, .section {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Subtítulos */
+.subtitulo, .section-title {
+    font-size: 1.8em;
+    margin-top: 25px;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+/* Listas de requisitos e documentos */
+.eligibility-list, .document-list, .non-eligibility-list, .lista-universidades, .lista-participar {
+    list-style: none;
+    padding-left: 20px;
+    margin-left: 30px;
+}
+
+.eligibility-item, .document-item, .non-eligibility-item {
+    margin-bottom: 10px;
+}
+
+.texto-objetivo,
+.texto-universidades,
+.texto-participar {
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+/* Passos de inscrição */
+.steps-list {
+    list-style: decimal;
+    padding-left: 20px;
+}
+
+.step-item {
+    margin-bottom: 10px;
+}
+
+/* Link */
+a {
+    color: #1a73e8;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Rodapé */
+.rodape {
+    text-align: center;
+    background-color: #007bff;
+    color: #ffffff;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
