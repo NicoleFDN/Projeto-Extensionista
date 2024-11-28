@@ -1,0 +1,26 @@
+footer{
+    background-color: #001e67;
+    padding: 30px;
+
+}
+
+footer img{
+    height: 70px;
+    border-radius: 20px;
+}
+
+#footer_content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+}
+
+footer li{
+    list-style: none;
+}
+
+footer li a{
+    color: white;
+}

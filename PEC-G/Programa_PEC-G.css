@@ -1,13 +1,95 @@
 @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap');
 
-/* Resetando as margens e o padding */
-body, h1, h2, p, ul, ol, li {
-    margin: 0;
-    padding: 0;
+.cabecalho {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 0 6px gray;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 8.5vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000; 
+}
+.menu ul{
+    list-style: none;
+    display: flex;
+}
+.logo img{
+    height: 100px;
+}
+.menu ul li a{
+    color: black;
+    font-weight: 500;
+    padding: 20px 40px;
+    display: block;
+    transition: 0.1s;
 }
 
-/* Estilos gerais */
-body {
+.menu ul li a:hover{
+    background-color: rgb(248, 248, 248);
+}
+
+.menu-drop {
+    position: relative;
+    z-index: 1001; 
+}
+
+
+.menu-drop .drop {
+    position: absolute;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    z-index: 2000;
+    left: 0;
+}
+
+.menu-drop .drop a{
+    padding: 15px;
+}
+
+.menu-drop .drop a:hover{
+    background-color: rgb(248, 248, 248);
+}
+
+.menu-drop:hover .drop {
+    max-height: 500px;
+}
+
+footer{
+    background-color: #001e67;
+    padding: 30px;
+
+}
+
+footer img{
+    height: 70px;
+    border-radius: 20px;
+}
+
+#footer_content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+}
+
+footer li{
+    list-style: none;
+}
+
+footer li a{
+    color: white;
+}
+/*kauan*/
+
+body, h1, h2, p, ul, ol, li {
     background-color: #ffffff;
     color: #333333;
     margin: 0;
@@ -16,7 +98,6 @@ body {
     line-height: 1.6;
 }
 
-/* Título principal */
 .titulo, .main-title {
     font-size: 3em;
     text-align: center;
@@ -27,14 +108,12 @@ body {
     color: #fff;
 }
 
-/* Descrição */
 .descricao {
     text-align: center;
     font-size: 1.2em;
     margin-bottom: 40px;
 }
 
-/* Seções */
 main, .section {
     max-width: 900px;
     margin: 0 auto;
@@ -44,7 +123,6 @@ main, .section {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
-/* Subtítulos */
 .subtitulo, .section-title {
     font-size: 1.8em;
     margin-top: 25px;
@@ -52,7 +130,6 @@ main, .section {
     margin-bottom: 10px;
 }
 
-/* Listas de requisitos e documentos */
 .eligibility-list, .document-list, .non-eligibility-list, .lista-universidades, .lista-participar {
     list-style: none;
     padding-left: 20px;
@@ -70,7 +147,6 @@ main, .section {
     line-height: 1.6;
 }
 
-/* Passos de inscrição */
 .steps-list {
     list-style: decimal;
     padding-left: 20px;
@@ -80,7 +156,6 @@ main, .section {
     margin-bottom: 10px;
 }
 
-/* Link */
 a {
     color: #1a73e8;
     text-decoration: none;
@@ -90,7 +165,6 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Rodapé */
 .rodape {
     text-align: center;
     background-color: #007bff;
