@@ -11,7 +11,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1000; 
+    z-index: 1000;
 }
 .menu ul{
     list-style: none;
@@ -37,7 +37,6 @@
     z-index: 1001;
 }
 
-
 .menu-drop .drop {
     position: absolute;
     background-color: rgb(255, 255, 255);
@@ -60,25 +59,44 @@
 .menu-drop:hover .drop {
     max-height: 500px;
 }
+
+footer{
+    background-color: #001e67;
+    padding: 30px;
+
+}
+
+footer img{
+    height: 70px;
+    border-radius: 20px;
+}
+
+#footer_content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 30px;
+}
+
+footer li{
+    list-style: none;
+}
+
+footer li a{
+    color: white;
+}
 /*kauan*/
 
 * {
     font-family: 'Open Sans', sans-serif;
 }
 
-body.pagina {
+body{
     margin: 0;
     padding: 0;
-    background-color: #2c3e50;
+    background-color: rgb(211, 215, 220);
     color: #333;
-}
-
-.cabecalho {
-    background-color: #003366;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
-    border-bottom: 4px solid #ffcc00;
 }
 
 .titulo {
@@ -95,7 +113,7 @@ body.pagina {
     border-collapse: collapse;
     margin: 20px auto;
     background-color: #fff;
-    box-shadow: 0px 4px 6px rgba(211, 215, 220);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     font-size: 0.9em;
 }
 
@@ -120,11 +138,6 @@ body.pagina {
     padding: 12px;
     border: 1px solid #ccc;
     font-size: 1em;
-}
-
-.evento strong, .data strong {
-    color: #cc3300;
-    background-color: #ffebcc;
 }
 
 .rodape {
