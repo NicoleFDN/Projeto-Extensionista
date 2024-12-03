@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/Elementos-Pag/header.css">
+    <link rel="stylesheet" href="/Elementos-Pag/footer.css">
+    <script src="/Elementos-Pag/menu.js" defer></script>
+    <title>ACEJA</title>
+</head>
+
+<body>
+        <!--Header-->
+        <header>
+            <div class="container">
+                <nav class="cabecalho">
+                    <div class="logo">
+                        <a href="/TelaInicial/index.html">
+                            <img src="/img/img-logo.png" alt="ACEJA">
+                        </a>
+                    </div>
+                    <div class="menu">
+                        <ul>
+                            <li class="menu-drop"><a href=""><i class="bi bi-caret-down-fill"></i></i>Programas</a>
+                                <div class="drop">
+                                    <a href="/Programas/Programas-PEC-G/Programa_PEC-G.html">PEC-G</a>
+                                    <a href="/Programas/Programas-PEC-PG/Programa_PEC-PG.html">PEC-PG</a>
+                                </div>
+                            </li>
+                            <li class="menu-drop"><a href=""><i class="bi bi-caret-down-fill"></i></i>Etapas</a>
+                                <div class="drop">
+                                    <a href="/Etapas/Etapas-PEC-G/Etapas_PEC-G.html">PEC-G</a>
+                                    <a href="/Etapas/Etapas-PEC-PG/Etapas_PEC-PG.html">PEC-PG</a>
+                                </div>
+                            </li>
+                            <li><a href="/Calendario/Calendario.html">Calendário</a></li>
+                            <li><a href="https://www.gov.br/mec/pt-br/centrais-de-conteudo/editais/pdf/pecg-pec-ple-2025.pdf">Edital</a></li>
+                        </ul>
+                    </div>
+    
+                    <!-- menu mobile -->
+                    <div class="mobile">
+                        <div class="btn-abrir-menu" id="btn-menu">
+                            <i class="bi bi-list"></i>
+                        </div>
+                        <div class="menu-mobile" id="menu-mobile">
+                            <div class="btn-fechar">
+                                <i class="bi bi-x"></i>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li class="menu-drop"><a href="/Calendario/Calendario.html">Calendário</a></li>
+                                    <li class="menu-drop"><a href="/Programas/Programas-PEC-G/Programa_PEC-G.html">Sobre o PEC-G</a></li>
+                                    <li class="menu-drop"><a href="/Programas/Programas-PEC-PG/Programa_PEC-PG.html">Sobre o PEC-PG</a></li>
+                                    <li class="menu-drop"><a href="/Etapas/Etapas-PEC-G/Etapas_PEC-G.html">Etapas do PEC-G</a></li>
+                                    <li class="menu-drop"><a href="/Etapas/Etapas-PEC-PG/Etapas_PEC-PG.html">Etapas do PEC-PG</a></li>
+                                    <li><a href="https://www.gov.br/mec/pt-br/centrais-de-conteudo/editais/pdf/pecg-pec-ple-2025.pdf">Edital</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="overlay-menu" id="overlay-menu"></div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!--End-Header-->
+
+    <main>
+        <section id="main-section">
+            <div class="image-container">
+                <div class="overlay">
+                    <h1>Bem-vindo à ACEJA!</h1>
+                    <p>Conectando sonhos africanos à educação no Brasil.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="section-mensage">
+            <h2>Nosso objetivo é te ajudar o máximo que conseguimos.</h2>
+        </section>
+
+        <!-- section 2 -->
+        <section id="second-section">
+            <div>
+                <h2>Oque você procura?</h2>
+            </div>
+            <div id="cards-section-2">
+                <div class="card">
+                    <a href="/Documentos/Documentos.html">
+                        <img src="/img/paper_2.jpg" alt="Documentação">
+                        <h3>Documentação necessária</h3>
+                        <p></p>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="/Requisitos/Requisitos.html">
+                        <img src="/img/img-requisitos.jpg" alt="Requisitos">
+                        <h3>Requisitos do canditato</h3>
+                    </a>
+                </div>
+                <div class="card">
+                    <a href="/Calendario/Calendario.html">
+                        <img src="/img/img-calendario.jpg" alt="Calendario">
+                        <h3>Calendário de datas</h3>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- section 3 -->
+        <section id="section-3">
+            <div class="titulo-section-3">
+                <h3>Descubra mais sobre:</h3>
+            </div>
+            <div id="cards-section-3">
+                <div class="card3">
+                    <h4>PEC-G</h4>
+                    <p>O PEC-G oferece vagas gratuitas em cursos de graduação no Brasil a estudantes estrangeiros,
+                        abrangendo diversas áreas do conhecimento, sem custos ou necessidade de exames de admissão.</p>
+                    <ul>
+                        <li><a href="/Programas/Programas-PEC-G/Programa_PEC-G.html" target="_blank">saiba mais</a></li>
+                    </ul>
+                </div>
+                <div class="card3">
+                    <h4>PEC-PG</h4>
+                    <p>O Programa de Estudantes-Convênio de Pós-Graduação (PEC-PG) oferece bolsas para cursos de
+                        pós-graduação em instituições brasileiras a estudantes de países com acordo de cooperação
+                        educacional e cultural com o Brasil.</p>
+                    <ul>
+                        <li><a href="/Programas/Programas-PEC-PG/Programa_PEC-PG.html" target="_blank">saiba mais</a></li>
+                    </ul>
+                </div>
+                <div class="card3">
+                    <h4>Celpe-Bras</h4>
+                    <p>O Certificado de Proficiência em Língua Portuguesa para Estrangeiros (Celpe-Bras) é o exame
+                        brasileiro oficial para certificar proficiência em português como língua estrangeira.</p>
+                    <ul>
+                        <li><a
+                                href="https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/celpe-bras" target="_blank">saiba
+                                mais</a></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <!-- fim section 3 -->
+
+    </main>
+        <!--footer-->
+        <footer>
+            <div id="footer_content">
+                <div class="logo-footer">
+                    <a href="/TelaInicial/index.html">
+                        <img src="/img/img-logo.jpg" alt="ACEJA">
+                    </a>
+                </div>
+                <div id="footer_copyright">
+                    &#169
+                    2024 all rights reserved
+                </div>
+            </div>
+        </footer>
+        <!--end footer-->
+</body>
+
+</html>

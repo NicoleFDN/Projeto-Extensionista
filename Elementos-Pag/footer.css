@@ -1,15 +1,16 @@
-footer{
+/* inicio footer */
+footer {
     background-color: #001e67;
     padding: 30px;
-
+    color: black;
 }
 
-footer img{
+footer img {
     height: 70px;
     border-radius: 20px;
 }
 
-#footer_content{
+#footer_content {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -17,10 +18,12 @@ footer img{
     padding: 30px;
 }
 
-footer li{
+footer li {
     list-style: none;
 }
 
-footer li a{
+footer li a {
     color: white;
 }
+
+/* fim footer */

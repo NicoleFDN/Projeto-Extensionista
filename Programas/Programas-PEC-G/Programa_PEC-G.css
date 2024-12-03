@@ -1,0 +1,562 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+.conteudo-principal {
+    margin-top: 8.5vh;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: #e9ecef;
+    color: #333;
+    line-height: 1.5;
+}
+
+/* Main */
+
+/* ---- Conteúdo Principal ---- */
+.conteudo-principal {
+    margin: 15px auto;
+    padding: 25px;
+    max-width: 90vw;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+} /* ---- Fim Conteúdo Principal ---- */
+
+/* ---- Títulos e Subtítulos ---- */
+.titulo-secao, .subtitulo-beneficios, .subtitulo-beneficios-adicionais {
+    color: #003366;
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.titulo-secao::after, .subtitulo-beneficios::after, .subtitulo-beneficios-adicionais::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #003366;
+    margin-top: 10px;
+    border-radius: 2px;
+} /* ---- Fim Títulos e Subtítulos ---- */
+
+/* ---- Descrições ---- */
+.descricao-objetivo, .descricao-cobertura, .descricao-custos, .descricao-orcamento, .descricao-beneficios {
+    font-size: 1rem;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    text-align: justify;
+    background-color: #F8F9FA;
+    padding: 10px 15px;
+    border: 1px solid #E9ECEF;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+} /* ---- Fim Descrições ---- */
+
+/* ---- Listas ---- */
+.lista-cobertura, .lista-custos, .lista-beneficios, .lista-beneficios-adicionais, .lista-duracao {
+    margin-left: 15px;
+}
+
+.lista-cobertura {
+    list-style-type: disc;
+}
+
+.lista-custos {
+    list-style-type: circle;
+}
+
+.lista-beneficios {
+    list-style-type: square;
+}
+
+.lista-beneficios-adicionais {
+    list-style-type: disc;
+}
+
+.lista-duracao {
+    list-style-type: decimal;
+} /* ---- Fim Listas ---- */
+
+/* ---- Itens de Listas ---- */
+.item-cobertura, .item-custo, .item-beneficio, .item-beneficio-adicional, .item-duracao {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 12px;
+    line-height: 1.6;
+} /* ---- Fim Itens de Listas ---- */
+
+/* ---- Seções ---- */
+.secao-beneficios, .secao-cobertura, .secao-duracao, .secao-beneficios-adicionais {
+    background-color: #e9ecef;
+    border-radius: 10px;
+    padding: 18px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+} /* ---- Fim Seções ---- */
+
+/* ---- Itens de Benefício ---- */
+.item-beneficio, .item-beneficio-adicional {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #003366;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.item-beneficio strong, .item-beneficio-adicional strong {
+    color: #003366;
+} /* ---- Fim Itens de Benefício ---- */
+
+/* ---- Seção Objetivo ---- */
+
+.secao-objetivo {
+    padding: 40px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.secao-objetivo h2 {
+    font-size: 2rem;
+    color: #003366;
+    text-align: center;
+    margin-bottom: 25px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 8px;
+}
+
+.secao-objetivo p {
+    font-size: 1.1rem;
+    color: #000000;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    text-align: justify;
+    background-color: #e9ecef;
+    padding: 20px;
+    border-radius: 2px solid #003366;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.secao-objetivo p:last-of-type {
+    margin-bottom: 0;
+}
+
+/* ---- Fim Seção Objetivo ---- */
+
+/* ---- Seção Cobertura ---- */
+.secao-cobertura p, .secao-duracao p {
+    font-size: 1rem;
+    color: #555;
+    margin-top: 12px;
+}
+
+.secao-cobertura {
+    background-color: #e9ecef;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    border: 1px solid #e6e6e6;
+}
+
+.descricao-cobertura,
+.descricao-custos {
+    font-size: 1.2rem;
+    color: #444;
+    line-height: 1.7;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    border-left: 4px solid #007acc;
+}
+
+.descricao-orcamento {
+    border-left: 4px solid #dc2708;
+    border-right: 4px solid #dc2708;
+}
+
+.lista-cobertura,
+.lista-custos {
+    padding-left: 20px;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.item-cobertura,
+.item-custo {
+    margin-bottom: 10px;
+    padding: 12px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+}
+
+.item-cobertura::before,
+.item-custo::before {
+    content: "•";
+    font-size: 1.5rem;
+    color: #007acc;
+    margin-right: 10px;
+}
+
+/* ---- Fim Seção Cobertura ---- */
+
+/* ---- Seção Benefícios ---- */
+.secao-beneficios {
+    background-color: #e9ecef;
+    padding: 18px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.secao-beneficios h2 {
+    color: #003366;
+    font-size: 1.8rem;
+    margin-bottom: 12px;
+}
+
+.secao-beneficios ul {
+    font-size: 1rem;
+    color: #333;
+}
+
+.secao-beneficios li {
+    margin-bottom: 10px;
+}
+
+.secao-beneficios li::before {
+    content: "✓";
+    color: #003366;
+    margin-right: 8px;
+    font-size: 1rem;
+}
+
+/* ---- Fim Seção Benefícios ---- */
+
+/* --- secão Duração --- */
+
+.secao-duracao {
+    background-color: #e9ecef;
+    padding: 40px;
+    margin: 20px auto;
+    max-width: 900px;
+    border-radius: 12px;
+    border: 1px solid #ccc;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+.titulo-secao {
+    font-size: 28px;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.lista-duracao {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.item-duracao {
+    background-color: #f9f9f9;
+    border-left: 6px solid #003366;
+    border-right: 6px solid #003366;
+    padding: 18px;
+    margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 1.7;
+    border-radius: 8px;
+    transition: all 0.3s ease-in-out;
+}
+
+.item-duracao strong {
+    color: #2980b9;
+    font-weight: 600;
+}
+
+.item-duracao:last-child {
+    margin-bottom: 0;
+}
+
+/* --- Fim Seção Duração --- */
+
+/* Final Main*/
+
+h1, .descricao-programa {
+    text-align: center;
+    color: #003366;
+}
+
+/*Começo título principal*/
+
+.titulo-principal {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #2c2c2c;
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 50px;
+}
+
+.titulo-principal::after {
+    content: '';
+    width: 120px;
+    height: 5px;
+    background-color: #003366;
+    display: block;
+    margin: 10px auto 0;
+    border-radius: 5px;
+}
+
+.descricao-programa {
+    font-size: 1.2rem;
+    color: #333;
+    line-height: 1.8;
+    background-color: #f9f9f9;
+    padding: 20px 30px;
+    margin: 20px auto;
+    max-width: 800px;
+    border-left: 4px solid #003366;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: justify;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .descricao-programa {
+        padding: 15px;
+        max-width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .descricao-programa {
+        font-size: 1rem;
+    }
+}
+
+/*final do título principal*/
+
+/* UNIVERSIDADES */
+.titulo-secao,
+.subtitulo-beneficios,
+.subtitulo-beneficios-adicionais {
+    color: #003366;
+    box-sizing: border-box;
+}
+
+.secao-universidades {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.subtitulo-universidades {
+    font-size: 2rem;
+    color: #005B96;
+    margin-bottom: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.lista-universidades {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+}
+
+.item-regiao {
+    font-size: 1.8rem;
+    color: #003366;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #003366;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+
+.item-universidade {
+    margin-left: 20px;
+    font-size: 1rem;
+    color: #333;
+    transition: color 0.3s, background-color 0.3s;
+    padding: 2px 6px;
+    border-radius: 4px;
+}
+
+.informacao-adicional {
+    text-align: center;
+    font-size: 18px;
+    color: #555;
+    margin-top: 20px;
+    font-style: italic;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+}
+
+/* H2, P - UNIVERSIDADES */
+
+.subtitulo-universidades {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 2rem;
+    color: #1D3557;
+    border-bottom: 3px solid #457B9D;
+    text-align: left;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+}
+
+.descricao-universidades {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 0.95rem;
+    color: #495057;
+    background-color: #F8F9FA;
+    border: 1px solid #E9ECEF;
+    border-radius: 8px;
+    padding: 10px 15px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    line-height: 1.7;
+    margin-bottom: 15px;
+    text-align: justify;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* fINAL - H2, P */
+
+@media (max-width: 768px) {
+    .secao-universidades {
+        padding: 20px;
+    }
+
+    .item-regiao {
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+
+    .subtitulo-universidades {
+        font-size: 1.5rem;
+        list-style: none;
+    }
+
+    .item-universidade {
+        font-size: 0.9rem;
+    }
+}
+
+.lista-regiao {
+    padding-left: 20px;
+    margin-top: 10px;
+    list-style: none;
+}
+
+
+
+/* LISTA REGIÕES */
+
+.lista-regiao {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.item-regiao {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    font-size: 1.3rem;
+    color: #1D3557;
+    margin-bottom: 20px;
+}
+
+.item-universidade {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 1.1rem;
+    color: #000000;
+    margin: 10px 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-left: 3px solid #003366;
+    border-right: 3px solid #003366;
+    background-color: #F1F3F5;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.universidades-regiao {
+    list-style: none;
+    padding-left: 20px;
+    margin: 10px 0;
+}
+
+.universidade-item {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 0.95rem;
+    color: #003366;
+    margin-bottom: 5px;
+    padding: 10px;
+    background-color: #FFFFFF;
+    border: 1px solid #E9ECEF;
+    border-radius: 10px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.universidade-item:hover {
+    transform: translateX(5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #E3F2FD;
+}
+
+.universidade-item a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.universidade-item a:hover {
+    text-decoration: underline;
+}
+
+/* FIM lista */
